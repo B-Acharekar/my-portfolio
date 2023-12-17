@@ -11,7 +11,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #333;
+    background-color: #111111;
     color: #fff;
     padding: 1rem 0;
 }
@@ -47,19 +47,32 @@ section {
     padding: 2rem;
 }
 
+.myself {
+    padding: 5rem;
+    width: 25rem;
+    text-align: center; /*Center the text */
+}
+
+#imgsrc {
+    float: left;
+    margin-right: 20px; /* Adjust the margin as needed for spacing */
+}
+
 .intro {
-    text-align: center;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
 }
 
 img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    padding: 25px;
     margin-top: 20px;
-    max-width: 200px;
+    max-width: 500px;
 }
 
 /* Footer styles */
 footer {
-    background-color: #333;
+    background-color: #111111;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -68,19 +81,15 @@ footer {
     width: 100%;
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
-    nav ul {
+    .intro {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+    
+    .myself {
+        padding: 2rem; /* Adjust padding for better spacing on small screens */
+        width: auto;
         text-align: center;
-    }
-
-    nav li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
     }
 }
