@@ -2,6 +2,7 @@
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 body {
@@ -11,8 +12,8 @@ body {
 
 /* Header styles */
 header {
-    background-color: #111111;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
     padding: 1rem 0;
 }
 
@@ -39,18 +40,26 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffd700; /* Change to your preferred hover color */
+    color: #0ca0d6; /* Change to your preferred hover color */
 }
 
 /* Section styles */
 section {
+    color: white;
     padding: 2rem;
 }
 
 .myself {
-    padding: 5rem;
-    width: 25rem;
-    text-align: center; /*Center the text */
+    font-size: 35px;
+    position: relative;
+    padding: 1rem;
+    width: 45rem;
+    text-align: center;
+}
+
+.name{
+    font: bolder;
+    font-size: 50px;
 }
 
 #imgsrc {
@@ -67,13 +76,13 @@ img {
     /* border-radius: 50%; */
     padding: 25px;
     margin-top: 20px;
-    max-width: 500px;
+    max-width: 25rem;
 }
 
 /* Footer styles */
 footer {
-    background-color: #111111;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
     padding: 1rem 0;
     position: fixed;
