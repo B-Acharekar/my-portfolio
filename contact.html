@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Bhushan Acharekar</title>
+    <title>Contact Me</title>
 </head>
-
 <body>
     <header>
         <nav>
@@ -21,21 +19,34 @@
             </ul>
         </nav>
     </header>
-
-    <section id="home">
-        <div class="intro">
-            <div id="divsrc">
-                <img src="img/logo.png" alt="Your Name" id="imgsrc">
-            </div>
-            <div class="myself">
-                <p class="name"><B>&lt;Bhushan&gt;</B></p>
-                <p>"A diligent student embarking on a journey, wandering through the realms of knowledge, skillfully accruing the necessary ingredients to forge the pan of expertise, cooking up a future as a professional web developer."</p>
-                <p class="name"><B>&lt;/Bhushan&gt;</B></p>
-            </div>
+    
+    <section id="centered_content">
+        <p class="align_centre">
+            Contact Me
+        </p>
+    
+        <div class="lghtcntr">
+            <p class="lighttxt"><b>Have a concept to collaborate on or simply drop a greeting!</b></p>
         </div>
     </section>
-
-    <!-- Other sections (about, portfolio, skills, resume, contact) go here -->
+    <section id="contact_form">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name..">
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email..">
+    
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="For e.g. Topic or any Idea">
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message.."></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
 
     <footer>
         <div class="justify_flex">
@@ -69,6 +80,7 @@
         </div>
 
     </footer>
-</body>
 
+
+</body>
 </html>

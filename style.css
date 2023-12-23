@@ -1,4 +1,4 @@
-/* Reset some default browser styles */
+/* Home page */
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
@@ -8,6 +8,7 @@ body, h1, h2, p, ul {
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    color: white;
 }
 
 /* Header styles */
@@ -45,7 +46,7 @@ nav a:hover {
 }
 
 /* Section styles */
-section {
+#home {
     color: white;
     padding: 2rem;
 }
@@ -56,6 +57,7 @@ section {
     padding: 1rem;
     width: 45rem;
     text-align: left;
+    margin-left: 5rem;
 }
 
 .name{
@@ -67,6 +69,9 @@ section {
 #imgsrc {
     float: left;
     margin-right: 20px; /* Adjust the margin as needed for spacing */
+    padding: 25px;
+    margin-top: 20px;
+    max-width: 25rem;
 }
 
 .intro {
@@ -74,11 +79,9 @@ section {
     align-items: center; /* Align items vertically in the center */
 }
 
-img {
+#divsrc {
     /* border-radius: 50%; */
-    padding: 25px;
-    margin-top: 20px;
-    max-width: 25rem;
+    margin-right: 5px;
 }
 
 /* Footer styles */
@@ -86,14 +89,14 @@ footer {
     background-color: #000000;
     color: #ffffff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
 footer div a img{
-    padding: 15px;
+    padding: 10px;
     max-width: 2rem;
     filter: invert(100%);
     transition: transform .2s; /* Animation */
@@ -101,7 +104,7 @@ footer div a img{
 }
 
 footer div a img:hover{
-   transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 .justify_flex{
@@ -125,3 +128,143 @@ footer div a img:hover{
         text-align: center;
     }
 }
+
+
+/* About Us */
+#justify_centre{
+    display:flex;
+    justify-content: center;
+}
+
+.centre{
+    font: bold;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px; /* Adjust padding for better spacing on small screens */
+    width: auto;
+    margin: 15px ;
+}
+
+#about{
+    color: white;
+    padding: 0.5rem;   
+}
+
+.flex_centre{
+    display: flex;
+    align-items: center;
+}
+#divpfp{
+    margin:25px;
+    display: flex;
+    align-items: center;
+}
+
+#imgpfp{
+    float: left; /* Adjust the margin as needed for spacing */
+    border-radius: 50%;
+    margin: 25px;
+    max-width: 20rem;
+    transition: transform .3s; /* Animation */
+}
+
+#imgpfp:hover{
+    transform: scale(1.2);
+}
+
+.div_center{
+    font-size: 17px;
+    position: relative;
+    margin: 1rem;
+    width: 45rem;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.txt{
+    font: bolder;
+    font-size: 50px;
+    text-align: left;   
+}
+.txt-1{
+    font-size: 30px;
+    text-align: left;   
+}
+
+/* contact page */
+    #centered_content {
+            text-align: center;
+            margin-top: 5px; /* Adjust the margin as needed */
+        }
+
+        #centered_content .align_centre {
+            display: inline-block;
+            position: relative;
+            margin-bottom: 10px; /* Adjust the margin between the elements */
+            font-size: 35px;
+        }
+
+        #centered_content .align_centre::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: black; /* You can change the color as needed */
+            bottom: -10px;
+            left: 0;
+        }
+
+        .lghtcntr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lighttxt {
+            font-weight: lighter;
+            font-size: 15px;
+            color: #c7c7c7;
+            text-align: center;
+        }
+
+        #contact_form {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        #contact_form form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #contact_form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        #contact_form input,
+        #contact_form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border-radius: 15px;
+        }
+
+        #contact_form button {
+            background-color: #838684;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            width: 31rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+            transition: transform .2s; /* Animation */
+        }
+        
+        #contact_form button:hover{
+            transform: scale(1.1);
+        }
